@@ -26,16 +26,15 @@ back-ground bt color #2196F3
   --color-footer-adress: rgba(255, 255, 255, 0.6);
   --primary-white: #ffffff;
   --color-hf-logo: #2196f3;
+  --color-hero-footer: #2f303a;
 }
 body {
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   color: var(--color-h);
-  background-color: #e5e5e5;
+  background-color: var(--primary-white);
 }
 /*button index*/
 .btn {
@@ -83,7 +82,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color-h);
 }
 .header-item:hover,
 .header-item:focus {
@@ -102,7 +101,7 @@ a {
 }
 /*hero*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--color-hero-footer);
 }
 .hero-title {
   font-weight: 900;
@@ -171,6 +170,7 @@ a {
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .portfolio-text {
   font-weight: 400;
@@ -181,7 +181,7 @@ a {
 }
 /*Footer*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-hero-footer);
 }
 
 .list .footer-list {
