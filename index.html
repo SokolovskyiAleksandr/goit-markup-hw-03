@@ -23,7 +23,7 @@
     <header class="section header">
         <div class="container header-page">
         <nav class="navigation">
-            <a href="./index.html" class="logo" lang="en">Web<span>Studio</span></a>
+            <a href="./index.html" class="logo header-logo" lang="en">Web<span>Studio</span></a>
             <ul class="list header-nav">
                 <li class="header-item"><a href="./index.html" class="header-link current">Студия</a></li>
                 <li class="header-item"><a href="./portfolio.html" class="header-link">Портфолио</a></li>
@@ -48,22 +48,22 @@
             <!--Скрытый заголовок(Потом поменять)-->
             <h2 class="visually-hidden">Подход к работе</h2>
             <ul class="list list-about">
-                <li>
+                <li class="about-link">
                     <h3 class="about-title">Внимание к деталям</h3>
                     <p class="about-text">Идейные соображения, а также начало повседневной работы по формированию
                         позиции.</p>
                 </li>
-                <li>
+                <li class="about-link">
                     <h3 class="about-title">Пунктуальность</h3>
                     <p class="about-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
                         собой.</p>
                 </li>
-                <li>
+                <li class="about-link">
                     <h3 class="about-title">Планирование</h3>
                     <p class="about-text">Равным образом консультация с широким активом в значительной степени
                         обуславливает.</p>
                 </li>
-                <li>
+                <li class="about-link">
                     <h3 class="about-title">Современные технологии</h3>
                     <p class="about-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
@@ -75,9 +75,9 @@
             <div class="container">
             <h2 class="work-name">Чем мы занимаемся</h2>
             <ul class="list list-work">
-                <li><img src="./images/computer.jpg" alt="работа за компом" width="370" height="294"></li>
-                <li><img src="./images/phone.jpg" alt="Работа через телефон" width="370" height="294"></li>
-                <li><img src="./images/laptop.jpg" alt="работа на планшете" width="370" height="294"></li>
+                <li class="list-img"><img src="./images/computer.jpg" alt="работа за компом" width="370" height="294"></li>
+                <li class="list-img"><img src="./images/phone.jpg" alt="Работа через телефон" width="370" height="294"></li>
+                <li class="list-img"><img src="./images/laptop.jpg" alt="работа на планшете" width="370" height="294"></li>
             </ul>
             </div>
         </section>
@@ -85,22 +85,22 @@
             <div class="container">
             <h2 class="team-name">Наша команда</h2>
             <ul class="list list-team">
-                <li><img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <li class="link-name"><img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
                     <div class="name-job">
                         <h3 class="team-man">Игорь Демьяненко</h3>
                     <p class="team-job" lang="en">Product Designer</p></div>
                 </li>
-                <li><img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
+                <li class="link-name"><img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
                     <div class="name-job">
                         <h3 class="team-man">Ольга Репина</h3>
                     <p class="team-job" lang="en">Frontend Developer</p></div>
                 </li>
-                <li><img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260">
+                <li class="link-name"><img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260">
                     <div class="name-job">
                         <h3 class="team-man">Николай Тарасов</h3>
                     <p class="team-job" lang="en">Marketing</p></div>
                 </li>
-                <li><img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <li class="link-name"><img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" height="260">
                     <div class="name-job">
                         <h3 class="team-man">Михаил Ермаков</h3>
                     <p class="team-job" lang="en">UI Designer</p></div>
@@ -112,18 +112,20 @@
     </main>
     <!--Футер-->
     <footer class="footer">
-        <div class="container">
-        <a href="./index.html" class="logo" lang="en">Web<span>Studio</span></a>
-        <!--Адреса компании-->
-        <address>
-            <ul class="list">
-                <li><a href="https://goo.gl/maps/NyUceUtweVrDCDV7A" class="footer-list" target="_blank"
-                        rel="noopener noreferrer">г. Киев,
-                        пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="footer-list">info@example.com</a></li>
-                <li><a href="tel:+380991111111" class="footer-list">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container footer-container">
+            <a href="./index.html" class="logo footer-logo" lang="en">Web<span>Studio</span></a>
+            <!--Адреса компании-->
+            <address>
+                <ul class="list footer-contakt">
+                    <li class="footer-adress"><a href="https://goo.gl/maps/NyUceUtweVrDCDV7A" class="footer-list"
+                            target="_blank" rel="noopener noreferrer">г.
+                            Киев,
+                            пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-adress"><a href="mailto:info@example.com" class="footer-list">info@example.com</a>
+                    </li>
+                    <li class="footer-adress"><a href="tel:+380991111111" class="footer-list">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
         </div>
     </footer>
 </body>

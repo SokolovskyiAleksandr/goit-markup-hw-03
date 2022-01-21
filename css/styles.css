@@ -70,6 +70,7 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
 }
 .btn-primary {
   font-weight: 700;
@@ -79,7 +80,6 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--color-hf-logo);
   color: var(--primary-white);
-  border-radius: 4px;
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -98,6 +98,9 @@ a {
   color: var(--color-hf-logo);
 }
 /*header*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-page {
   display: flex;
   align-items: center;
@@ -129,6 +132,8 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-hf-logo);
+}
+.header-logo {
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
@@ -159,6 +164,7 @@ a {
   color: var(--color-hf-logo);
 }
 /*hero*/
+
 .hero {
   background-color: var(--color-hero-footer);
   padding-top: 200px;
@@ -180,6 +186,11 @@ a {
 /*about описание преимуществ*/
 .about {
   padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+}
+.about-link + .about-link {
+  margin-left: 30px;
 }
 .list-about {
   display: flex;
@@ -195,12 +206,15 @@ a {
 }
 /*work виды работ*/
 .work {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .list-work {
   display: flex;
 }
+.list-img + .list-img {
+  margin-left: 30px;
+}
+
 .work-name {
   font-size: 36px;
   line-height: 1.17;
@@ -214,6 +228,7 @@ a {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .team-name {
   font-size: 36px;
@@ -221,16 +236,20 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
+.link-name + .link-name {
+  margin-left: 30px;
+}
 .name-job {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: var(--primary-white);
 }
 .team-man {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .team-job {
   font-weight: 400;
@@ -241,23 +260,30 @@ a {
 /* portfolio*/
 /* button portfolio*/
 .portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .list-btn {
   display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+.button-list + .button-list {
+  margin-left: 30px;
 }
 .btn-secondary {
   font-weight: 500;
   line-height: 1.62;
   background-color: #f5f4fa;
   color: var(--color-h);
-  display: flex;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: var(--color-hf-logo);
   color: var(--primary-white);
+}
+.portfolio-link {
+  border: 1px solid #eeeeee;
 }
 .portfolio-title {
   font-size: 18px;
@@ -282,10 +308,10 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo {
-  margin-bottom: 20px;
+.footer-contakt {
+  padding-top: 20px;
 }
-.footer-list {
+.footer-adress {
   margin-bottom: 9px;
 }
 .list .footer-list {
