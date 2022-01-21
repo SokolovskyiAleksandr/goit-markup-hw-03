@@ -43,6 +43,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   margin-left: auto;
@@ -282,8 +284,16 @@ a {
   background-color: var(--color-hf-logo);
   color: var(--primary-white);
 }
+.portfolio-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
 .portfolio-link {
-  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .portfolio-title {
   font-size: 18px;
@@ -301,6 +311,7 @@ a {
 .portfolio-des {
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 /*Footer*/
 .footer {
