@@ -168,13 +168,9 @@ a {
   color: var(--color-hf-logo);
 }
 /*hero*/
-
 .hero {
   background-color: var(--color-hero-footer);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  padding: 200px 452px;
   display: flex;
 }
 .hero-title {
