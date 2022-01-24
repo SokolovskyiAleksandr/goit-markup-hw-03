@@ -55,6 +55,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid red;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -63,7 +64,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-h);
   background-color: var(--primary-white);
-  width: 1600px;
 }
 /*button index*/
 .btn {
@@ -72,6 +72,7 @@ body {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+  border: none;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -86,6 +87,7 @@ body {
   color: var(--primary-white);
   min-width: 200px;
   height: 50px;
+  margin-top: 30px;
   padding: 10px 32px;
 }
 .btn-primary:hover,
@@ -114,8 +116,8 @@ a {
 }
 .header-nav {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-item + .header-item {
   margin-left: 50px;
@@ -123,8 +125,8 @@ a {
 .header-contakt {
   display: flex;
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation {
   display: flex;
@@ -138,8 +140,8 @@ a {
   color: var(--color-hf-logo);
 }
 .header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
 }
 .header span {
@@ -169,18 +171,23 @@ a {
 }
 /*hero*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
   background-color: var(--color-hero-footer);
-  padding: 200px 452px;
-  display: flex;
 }
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
+  letter-spacing: 0.06em;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
   color: var(--primary-white);
-  margin: 30px;
+  margin: 0 auto;
 }
 /*main index*/
 /*about описание преимуществ*/
@@ -193,11 +200,10 @@ a {
   width: 270px;
   height: auto;
 }
-.about-link + .about-link {
-  margin-left: var(--element-margin);
-}
+
 .list-about {
   display: flex;
+  justify-content: space-between;
 }
 .about-title {
   text-transform: uppercase;
@@ -281,7 +287,6 @@ a {
   font-weight: 500;
   line-height: 1.62;
   background-color: #f5f4fa;
-  border: none;
   color: var(--color-h);
   text-decoration: none;
   padding: 6px 22px;
@@ -293,8 +298,8 @@ a {
 }
 .portfolio-list {
   display: flex;
-  margin-left: -var(--element-margin);
-  margin-bottom: -var(--element-margin);
+  margin-left: -30px;
+  margin-bottom: -30px;
   flex-wrap: wrap;
 }
 .portfolio-link {
@@ -326,7 +331,7 @@ a {
   padding-bottom: var(--footer-paddingtb);
 }
 .footer-contakt {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer-adress {
   margin-bottom: 9px;
